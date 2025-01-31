@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+            <title>{% block title %}{% endblock %} - My Webpage</title>
+        {% endblock %}
+    </head>
+    <body>
+        <div id="content">{% block content %}{% endblock %}</div>
+        <div id="footer">
+            {% block footer %}Vanessa Lescano
+            {% endblock %}
+        </div>
+    </body>
+</html>
